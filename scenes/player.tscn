@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://taw254jd07p1"]
+
+[ext_resource type="PackedScene" uid="uid://df137wqqy8kun" path="res://assets/3d_models/panda.glb" id="1_myyua"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p5oe7"]
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="Character" parent="Pivot" instance=ExtResource("1_myyua")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 3, 0)
+shape = SubResource("CapsuleShape3D_p5oe7")

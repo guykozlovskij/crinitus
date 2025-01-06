@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://taw254jd07p1"]
+[gd_scene load_steps=4 format=3 uid="uid://taw254jd07p1"]
 
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_bf7fv"]
 [ext_resource type="PackedScene" uid="uid://df137wqqy8kun" path="res://assets/3d_models/panda.glb" id="1_myyua"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p5oe7"]
 
 [node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_bf7fv")
 
 [node name="Pivot" type="Node3D" parent="."]
 
